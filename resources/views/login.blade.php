@@ -1,66 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
-  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"><!-- Favicon-->
-  <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./assets/favicons/ms-icon-144x144.png"><!-- PWA primary color-->
-  <meta name="theme-color" content="#303030">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!-- Facebook-->
-  <meta property="author" content="luxi">
-  <meta property="og:site_name" content="alexstrap.ux-maestro.com">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website"><!-- Twitter-->
-  <meta property="twitter:site" content="luxi.ux-maestro.com">
-  <meta property="twitter:domain" content="luxi.ux-maestro.com">
-  <meta property="twitter:creator" content="luxi">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:image:src" content="./assets/images/logo.png">
-  <meta property="og:url" content="alexstrap.ux-maestro.com/movie">
-  <meta property="og:title" content="Movie">
-  <meta property="og:description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
-  <meta name="twitter:site" content="alexstrap.ux-maestro.com/movie">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="/images/movie-logo.png">
-  <meta property="og:image" content="/images/movie-logo.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <title>Movie - Login </title><!-- Styles-->
-  <!-- Put the 3rd/plugins css here-->
-  <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
-  <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
-  <link href="./assets/css/vendors/jquery.youtubebackground.css" rel="stylesheet">
-  <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
-  <link href="./assets/css/vendors/hamburger-menu.css" rel="stylesheet">
-  <link href="./assets/css/vendors/jquery.animateSlider.css" rel="stylesheet">
-  <link href="./assets/css/vendors/animate.css" rel="stylesheet">
-  <link href="./assets/css/vendors/animate-extends.css" rel="stylesheet">
-  <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
-  <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
-  <link href="./assets/css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="./assets/images/loading.gif" alt="loading"></div>
+@extends('app/app')
+@section('webTitle', 'Grow Jobs - Login')
+@section('webContent')
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="{{asset('images/loading.gif')}}" alt="loading"></div>
   <div class="m-application theme--light transition-page" id="app">
     <div class="loading"></div>
     <div class="m-content passion passion-var" id="main-wrap">
@@ -69,7 +10,7 @@
           <div class="hidden-md-up">
             <div class="logo logo-header">
               <a href="index.html">
-                <img src="./assets/images/movie-logo.svg" alt="logo">
+            <img src="{{ asset('images/movie-logo.svg') }}" alt="logo">
                 <p class="use-text-subtitle2">Movie</p>
               </a>
             </div>
@@ -96,18 +37,21 @@
             <div class="card form-box fragment-fadeUp">
               <div class="hidden-sm-down">
                 <a class="waves-effect btn-icon backtohome" href="index.html">
-                  <span><i class="ion-ios-home-outline"></i><i class="ion-ios-arrow-thin-left"></i></span>
+                  {{--  --}}
+                  
+                  <span><i class="ion-ios-home-outline"></i><i class="ion-ios-home-thin-left"></i></span>
                 </a>
               </div>
+            </div>
               <div class="auth-frame">
                 <div class="row">
                   <div class="col-md-5">
                     <div class="hidden-sm-down">
                       <div class="greeting">
-                        <div class="logo"><img src="./assets/images/movie-logo.svg" alt="logo">
-                          <p class="use-text-subtitle2">Movie</p>
+                        <div class="logo"><img src="{{ asset('images/movie-logo.svg')}}" alt="logo">
+                          <p class="use-text-subtitle2">Grow Jobs</p>
                         </div>
-                        <h4 class="use-text-title2 pb-2">Welcome back</h4>
+                        <h4 class="use-text-title2 pb-2">Welcome back!</h4>
                         <h6 class="use-text-subtitle2">Please login to continue</h6>
                       </div>
                     </div>
@@ -124,9 +68,9 @@
                           </a>
                         </div>
                         <div class="socmed-side-login">
-                          <button class="btn navi-btn waves-effect"><i class="ion-social-facebook"></i>Facebook</button>
-                          <button class="btn blue-btn waves-effect"><i class="ion-social-twitter"></i>Twitter</button>
-                          <button class="btn red-btn waves-effect"><i class="ion-social-google"></i>Google</button>
+                          <button class="btn navi-btn waves-effect"><i class="ion-social-facebook mr-3"></i>Facebook</button>
+                          <button class="btn blue-btn waves-effect"><i class="ion-social-twitter mr-3"></i>Twitter</button>
+                          <button class="btn red-btn waves-effect"><i class="ion-social-google mr-3"></i>Google</button>
                         </div>
                         <div class="separator">
                           <p>Or login with email</p>
@@ -169,24 +113,5 @@
         </div>
       </div>
     </div>
-  </div><!-- Scripts-->
-  <!-- Put the 3rd/plugins javascript here-->
-  <script src="./assets/js/vendors/jquery.min.js"></script>
-  <script src="./assets/js/vendors/bootstrap.min.js"></script>
-  <script src="./assets/js/vendors/enquire.min.js"></script>
-  <script src="./assets/js/vendors/jquery.enllax.min.js"></script>
-  <script src="./assets/js/vendors/jquery.form-validator.min.js"></script>
-  <script src="./assets/js/vendors/jquery.touchSwipe.min.js"></script>
-  <script src="./assets/js/vendors/jquery.youtubebackground.js"></script>
-  <script src="./assets/js/vendors/pace.min.js"></script>
-  <script src="./assets/js/vendors/slick.min.js"></script>
-  <script src="./assets/js/vendors/wow.min.js"></script>
-  <script src="./assets/js/vendors/jquery.navScroll.min.js"></script>
-  <script src="./assets/js/vendors/parallax.min.js"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
-  <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <script src="./assets/js/vendors/materialize.js"></script>
-  <script src="./assets/js/vendors/jquery.animateSlider.js"></script>
-  <script src="./assets/js/scripts.js"></script>
-</body>
-
-</html>
+  </div>
+  @endsection

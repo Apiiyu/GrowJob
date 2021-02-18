@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::view('/home', 'index');
+Route::view('/login', 'login');

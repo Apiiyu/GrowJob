@@ -1,67 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Grow Jobs">
-  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"><!-- Favicon-->
-  <link rel="shortcut icon" href="{{ asset('favicons/favicon.ico')}}">
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('favicons/apple-icon-57x57.png')}}">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('favicons/apple-icon-60x60.png')}}">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('favicons/apple-icon-72x72.png')}}>
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('favicons/apple-icon-76x76.png')}}">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('favicons/apple-icon-114x114.png')}}">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('favicons/apple-icon-120x120.png')}}">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('favicons/apple-icon-144x144.png')}}>
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('favicons/apple-icon-152x152.png')}}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicons/apple-icon-180x180.png')}}">
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('favicons/android-icon-192x192.png')}}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicons/favicon-32x32.png')}}">
-  <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicons/favicon-96x96.png')}}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicons/favicon-16x16.png')}}">
-  <link rel="manifest" href="./assets/favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="{{ asset('favicons/ms-icon-144x144.png') }}"><!-- PWA primary color-->
-  <meta name="theme-color" content="#303030">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!-- Facebook-->
-  <meta property="author" content="luxi">
-  <meta property="og:site_name" content="alexstrap.ux-maestro.com">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website"><!-- Twitter-->
-  <meta property="twitter:site" content="luxi.ux-maestro.com">
-  <meta property="twitter:domain" content="luxi.ux-maestro.com">
-  <meta property="twitter:creator" content="luxi">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:image:src" content="./assets/images/logo.png">
-  <meta property="og:url" content="alexstrap.ux-maestro.com/movie">
-  <meta property="og:title" content="Movie">
-  <meta property="og:description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
-  <meta name="twitter:site" content="alexstrap.ux-maestro.com/movie">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ asset('images/movie-logo.png')}}">
-  <meta property="og:image" content="{{ asset('images/movie-logo.png')}}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <title>Grow Jobs </title><!-- Styles-->
-  
-  <!-- Put the 3rd/plugins css here-->
-  <link href="{{ asset('css/vendors/normalize.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/bootstrap.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/jquery.youtubebackground.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/materialize.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/hamburger-menu.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/jquery.animateSlider.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/animate.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/animate-extends.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/slick-carousel/slick.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/vendors/slick-carousel/slick-theme.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/styles.css')}}" rel="stylesheet">
-</head>
-
-<body>
-  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="./assets/images/loading.gif" alt="loading"></div>
+@extends('app/app')
+@section('webTitle', 'Grow Jobs - Home')
+@section('webContent')
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="{{ asset('images/loading.gif') }}" alt="loading"></div>
   <div class="m-application theme--light transition-page" id="app">
     <div class="loading"></div>
     <div class="m-content passion passion-var" id="main-wrap">
@@ -1126,25 +1066,4 @@
       </div>
     </div>
   </div><!-- Scripts-->
-
-
-  <!-- Put the 3rd/plugins javascript here-->
-  <script src="{{ asset('js/vendors/jquery.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/bootstrap.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/enquire.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/jquery.enllax.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/jquery.form-validator.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/jquery.touchSwipe.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/jquery.youtubebackground.js')}}"></script>
-  <script src="{{ asset('js/vendors/pace.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/slick.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/wow.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/jquery.navScroll.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/parallax.min.js')}}"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
-  <script src="{{ asset('js/vendors/modernizr-2.8.3-respond-1.4.2.min.js')}}"></script>
-  <script src="{{ asset('js/vendors/materialize.js')}}"></script>
-  <script src="{{ asset('js/vendors/jquery.animateSlider.js')}}"></script>
-  <script src="{{ asset('js/scripts.js')}}"></script>
-</body>
-
-</html>
+@endsection
