@@ -60,6 +60,7 @@
     <link href="{{ asset('css/vendors/slick-carousel/slick.css')}}" rel="stylesheet">
     <link href="{{ asset('css/vendors/slick-carousel/slick-theme.css')}}" rel="stylesheet">
     <link href="{{ asset('css/styles.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/grow.css') }}">
 </head>
 <body>
     @yield('webContent')

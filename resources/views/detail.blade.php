@@ -1,66 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
-  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"><!-- Favicon-->
-  <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./assets/favicons/ms-icon-144x144.png"><!-- PWA primary color-->
-  <meta name="theme-color" content="#303030">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!-- Facebook-->
-  <meta property="author" content="luxi">
-  <meta property="og:site_name" content="alexstrap.ux-maestro.com">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website"><!-- Twitter-->
-  <meta property="twitter:site" content="luxi.ux-maestro.com">
-  <meta property="twitter:domain" content="luxi.ux-maestro.com">
-  <meta property="twitter:creator" content="luxi">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:image:src" content="./assets/images/logo.png">
-  <meta property="og:url" content="alexstrap.ux-maestro.com/movie">
-  <meta property="og:title" content="Movie">
-  <meta property="og:description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
-  <meta name="twitter:site" content="alexstrap.ux-maestro.com/movie">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="/images/movie-logo.png">
-  <meta property="og:image" content="/images/movie-logo.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <title>Movie - Detail Movie </title><!-- Styles-->
-  <!-- Put the 3rd/plugins css here-->
-  <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
-  <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
-  <link href="./assets/css/vendors/jquery.youtubebackground.css" rel="stylesheet">
-  <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
-  <link href="./assets/css/vendors/hamburger-menu.css" rel="stylesheet">
-  <link href="./assets/css/vendors/jquery.animateSlider.css" rel="stylesheet">
-  <link href="./assets/css/vendors/animate.css" rel="stylesheet">
-  <link href="./assets/css/vendors/animate-extends.css" rel="stylesheet">
-  <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
-  <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
-  <link href="./assets/css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="./assets/images/loading.gif" alt="loading"></div>
+@extends('app/app')
+@section('webTitle', 'Grow Jobs - Login')
+@section('webContent')
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="{{ asset('images/loading.gif')}}" alt="loading"></div>
   <div class="m-application theme--light transition-page" id="app">
     <div class="loading"></div>
     <div class="m-content passion passion-var" id="main-wrap">
@@ -89,15 +30,15 @@
                   <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
                 </button>
                 <div class="logo">
-                  <a href="index.html"><img src="./assets/images/movie-logo.png" alt="logo" /></a>
+                  <a href="index.html"><img src="{{ asset('images/movie-logo.png')}}" alt="logo" /></a>
                 </div>
                 <div>
                   <div class="scrollactive-nav show-lg-up">
                     <ul>
                       <li class="d-none"><a href="#banner"></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#promotions">promotions</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#featured">featured</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#top">top categories</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#promotions">Home</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#featured">Internship</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#top">Job Vacancies</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#all">all categories</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#pricing">pricing</a></li>
                     </ul>
@@ -176,17 +117,16 @@
         <div class="bg-movie"><img src="https://via.placeholder.com/533x799/fdffa4/757575" alt="poster" /></div>
         <main class="container-wrap">
           <div class="row justify-content-center">
-            <div class="col-sm-5 pa-6 order-sm-last">
-              <div class="image"><a class="waves-effect"><i class="ion-arrow-right-b play"></i>
-                  <figure>
-                    <img src="https://via.placeholder.com/533x799/fdffa4/757575" alt="movie" />
-                  </figure>
+            <div class="col-sm-5 col-lg-5 pa-6 order-sm-last">
+              <div class="image ml-5">
+                <div class="imgShadow ml-3"></div>
+                <img src="{{ asset('images/detIntern.jfif')}}" alt="movie" class="imgDetailIntern"/>
                 </a>
               </div>
             </div>
             <div class="col-lg-5 col-sm-7 pa-6 order-sm-first">
-              <div class="text"><span class="use-text-subtitle2">Vivamus sit amet</span>
-                <h4 class="use-text-title2"> The Lorem Ipsum Dolor Sit</h4>
+              <div class="text"><span class="use-text-subtitle2">Lowongan Magang</span>
+                <h4 class="use-text-title2"> Full-stack Developer</h4>
                 <div class="property">
                   <div class="star">
                     <i class="material-icons star-icon" title="1">star</i>
@@ -198,39 +138,57 @@
                     <i class="material-icons star-icon" title="4">star</i>
 
                     <i class="material-icons star-icon" title="5">star</i>
-                  </div>5.0<span class="divider"></span>2h 13m
+                  </div><p class="ml-3">5.0</p><span class="divider"></span>Stars Group
                 </div>
                 <article class="desc">
-                  <h6 class="use-text-paragraph">Drama, Action and Adventure</h6>
+                  <h6 class="use-text-paragraph text-justify">PT Stars Group, which is located in the center of Jakarta, 
+                    is here to provide online sales services consisting of 
+                    well-known brands such as Gucci, Rolex, Hermes. etc.
+                    
+                    The company certainly has many active users who 
+                    frequently use PT Stars Group's application services. 
+                    Then the company provides satisfying service to its 
+                    employees. </h6>
                 </article>
                 <div class="btn-area">
-                  <a class="btn-flat secondary waves-effect" href="#">Watch Trailer</a>
-                  <a class="btn primary waves-effect" href="#">Watch Full Movie</a>
+                  <a class="btn-flat secondary waves-effect mr-3" href="#">Profile Company</a>
+                  <a class="btn primary waves-effect" href="#">Send Your CV</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-12">
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-10 col-md-12 mt-5">
               <div class="card about">
                 <div class="row">
                   <div class="col-md-7">
-                    <h4 class="use-text-subtitle mb-3">Storyline</h4>
-                    <p class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <h4 class="use-text-subtitle mb-3">Requirements</h4>
+                    <p class="use-text-paragraph">1. Age maximum 35 years old</p>
+                    <p class="use-text-paragraph text-justify">2. Proficient in using front-end frameworks such as javascript frameworks and proficient at using back-end frameworks</p>
+                    <p class="use-text-paragraph">3. Able to work as a team</p>
+                    <p class="use-text-paragraph">4. Graduates of S1 information systems or informatics systems</p>
+                    <p class="use-text-paragraph">5. Have at least one year experience in this field</p>
+                    <p class="use-text-paragraph">6. Willing to work full time</p>
+
                     <div class="btn-area-detail mt-10">
                       <a class="btn-flat secondary waves-effect"><i class="ion-android-share-alt"> </i>share</a>
-                      <a class="btn-flat secondary waves-effect"><i class="ion-film-marker"> </i>trivia</a>
                       <a class="btn-flat secondary waves-effect"><i class="ion-ios-star"> </i>rate this</a>
                     </div>
                   </div>
                   <div class="col-md-5">
                     <div class="person">
-                      <h6 class="title-person">director</h6>
-                      <p>John Doe</p>
-                      <h6 class="title-person">writers</h6>
-                      <p>John Doe, Jim Doe, Jane Doe</p>
-                      <h6 class="title-person">stars</h6>
-                      <p>Jena Doe, James Doe, Jack Doe, Jimmy Doe</p>
+                      <h4 class="use-text-subtitle mb-3">Job Details</h4>
+                      <h6 class="title-person"> Industry </h5>
+                        <p>Information technology and services</p>
+                      <h6 class="title-person">Type of Work</h6>
+                      <p>Full Time</p>
+                      <h6 class="title-person">Job Function</h6>
+                      <p>Business Development and Information Technology</p>
+                      <h6 class="title-person">Salary</h6>
+                      <p>Rp.-</p>
+                      <h6 class="title-person">Length of Internship</h6>
+                      <p>3 Months</p>
+
                     </div>
                   </div>
                 </div>
@@ -243,10 +201,10 @@
             <div class="row">
               <div class="col-md-3 pa-4">
                 <div class="logo">
-                  <img src="./assets/images/movie-logo.png" alt="logo" />
-                  <h6 class="title">Movie</h6>
+                  <img src="{{ asset('images/movie-logo.png')}}" alt="logo" />
+                  <h6 class="title">Grow Jobs</h6>
                 </div>
-                <p class="body-2 show-md-up text-center">&copy; Alexstrap Movie 2020</p>
+                <p class="body-2 show-md-up text-center">&copy; Devlife Company 2021</p>
               </div>
               <div class="col-md-6 py-0 ps-6 pe-0">
                 <ul class="show-sm-down collapsible">
@@ -338,29 +296,10 @@
                 </div>
               </div>
             </div>
-            <p class="body-2 text-center show-sm-down">&copy; Alexstrap Movie 2020</p>
+            <p class="body-2 text-center show-sm-down">&copy; Devlife Company 2021</p>
           </div>
         </footer>
       </div>
     </div>
-  </div><!-- Scripts-->
-  <!-- Put the 3rd/plugins javascript here-->
-  <script src="./assets/js/vendors/jquery.min.js"></script>
-  <script src="./assets/js/vendors/bootstrap.min.js"></script>
-  <script src="./assets/js/vendors/enquire.min.js"></script>
-  <script src="./assets/js/vendors/jquery.enllax.min.js"></script>
-  <script src="./assets/js/vendors/jquery.form-validator.min.js"></script>
-  <script src="./assets/js/vendors/jquery.touchSwipe.min.js"></script>
-  <script src="./assets/js/vendors/jquery.youtubebackground.js"></script>
-  <script src="./assets/js/vendors/pace.min.js"></script>
-  <script src="./assets/js/vendors/slick.min.js"></script>
-  <script src="./assets/js/vendors/wow.min.js"></script>
-  <script src="./assets/js/vendors/jquery.navScroll.min.js"></script>
-  <script src="./assets/js/vendors/parallax.min.js"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
-  <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <script src="./assets/js/vendors/materialize.js"></script>
-  <script src="./assets/js/vendors/jquery.animateSlider.js"></script>
-  <script src="./assets/js/scripts.js"></script>
-</body>
-
-</html>
+  </div>
+  @endsection
