@@ -25,6 +25,10 @@
 /* See full documentation at:
 ** https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
 */
+*{
+  font-family: 'Poppins';
+}
+
 .use-text-title {
   font-weight: var(--font-bold);
   font-size: 48px;
@@ -10355,14 +10359,14 @@ body {
 .theme--light .simple-thumb .figure i:before {
   background: -o-linear-gradient(330deg, var(--v-primary-base), var(--v-secondary-base));
   background: linear-gradient(120deg, var(--v-primary-base), var(--v-secondary-base));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .theme--dark .simple-thumb .figure i:before {
   background: -o-linear-gradient(330deg, var(--v-primarylight-base), var(--v-secondarylight-base));
   background: linear-gradient(120deg, var(--v-primarylight-base), var(--v-secondarylight-base));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -11492,7 +11496,7 @@ body {
 
 @media (max-width: 959px) {
   .form-page .backtohome {
-    display: none;
+    display: block;
   }
 }
 
@@ -13366,7 +13370,7 @@ nav.nav-menu .scrollactive-nav .btn:hover {
 }
 
 #promotions .image figure {
-  width: 250px;
+  width: 300px;
   height: 360px;
   overflow: hidden;
   border-radius: 20px;
@@ -13798,9 +13802,10 @@ nav.nav-menu .scrollactive-nav .btn:hover {
   background: #000;
   height: 720px;
   width: 200%;
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 2% 2%;
   overflow: hidden;
   position: relative;
+
 }
 
 [dir="ltr"] #banner .root {
@@ -13863,11 +13868,11 @@ nav.nav-menu .scrollactive-nav .btn:hover {
   position: absolute;
   top: 0;
   background: #000;
-  opacity: 0.5;
+  opacity: 0;
   width: 200%;
   height: 100%;
   z-index: 10;
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 2% 2%;
 }
 
 [dir="ltr"] #banner .overlay {

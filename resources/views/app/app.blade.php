@@ -21,14 +21,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicons/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicons/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicons/favicon-16x16.png')}}">
-    <link rel="manifest" href="./assets/favicons/manifest.json">
+    <link rel="manifest" href="{{ asset('favicons/manifest.json')}}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset('favicons/ms-icon-144x144.png') }}"><!-- PWA primary color-->
     <meta name="theme-color" content="#303030">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!-- Facebook-->
-    <meta property="author" content="luxi">
+    <meta property="author" content="Devlife">
     <meta property="og:site_name" content="alexstrap.ux-maestro.com">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website"><!-- Twitter-->
@@ -38,8 +38,8 @@
     <meta property="twitter:card" content="summary">
     <meta property="twitter:image:src" content="./assets/images/logo.png">
     <meta property="og:url" content="alexstrap.ux-maestro.com/movie">
-    <meta property="og:title" content="Movie">
-    <meta property="og:description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
+    <meta property="og:title" content="Layanan Informasi Lowongan Magang">
+    <meta property="og:description" content="Grow Job - Layanan Informasi Lowongan Magang">
     <meta name="twitter:site" content="alexstrap.ux-maestro.com/movie">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{{ asset('images/movie-logo.png')}}">
@@ -60,6 +60,7 @@
     <link href="{{ asset('css/vendors/slick-carousel/slick.css')}}" rel="stylesheet">
     <link href="{{ asset('css/vendors/slick-carousel/slick-theme.css')}}" rel="stylesheet">
     <link href="{{ asset('css/styles.css')}}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/grow.css') }}">
 </head>
 <body>
@@ -81,5 +82,29 @@
     <script src="{{ asset('js/vendors/materialize.js')}}"></script>
     <script src="{{ asset('js/vendors/jquery.animateSlider.js')}}"></script>
     <script src="{{ asset('js/scripts.js')}}"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <script src="./assets/js/vendors/jquery.min.js"></script>
+  <script src="./assets/js/vendors/bootstrap.min.js"></script>
+  <script src="./assets/js/vendors/enquire.min.js"></script>
+  <script src="./assets/js/vendors/jquery.enllax.min.js"></script>
+  <script src="./assets/js/vendors/jquery.form-validator.min.js"></script>
+  <script src="./assets/js/vendors/jquery.touchSwipe.min.js"></script>
+  <script src="./assets/js/vendors/jquery.youtubebackground.js"></script>
+  <script src="./assets/js/vendors/pace.min.js"></script>
+  <script src="./assets/js/vendors/slick.min.js"></script>
+  <script src="./assets/js/vendors/wow.min.js"></script>
+  <script src="./assets/js/vendors/jquery.navScroll.min.js"></script>
+  <script src="./assets/js/vendors/parallax.min.js"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
+  <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="./assets/js/vendors/materialize.js"></script>
+  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

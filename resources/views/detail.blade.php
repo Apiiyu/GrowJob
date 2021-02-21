@@ -1,5 +1,5 @@
 @extends('app/app')
-@section('webTitle', 'Grow Jobs - Login')
+@section('webTitle', 'Grow Jobs - Detail Magang')
 @section('webContent')
   <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="{{ asset('images/loading.gif')}}" alt="loading"></div>
   <div class="m-application theme--light transition-page" id="app">
@@ -36,8 +36,8 @@
                   <div class="scrollactive-nav show-lg-up">
                     <ul>
                       <li class="d-none"><a href="#banner"></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#promotions">Home</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#featured">Internship</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="/">Home</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="##promotions">Internship</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#top">Job Vacancies</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#all">all categories</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#pricing">pricing</a></li>
@@ -114,13 +114,13 @@
             </div>
           </div>
         </header>
-        <div class="bg-movie"><img src="https://via.placeholder.com/533x799/fdffa4/757575" alt="poster" /></div>
+        <div class="bg-movie"><img src="{{ asset('images/intern/videographer.jfif' )}}" alt="poster" /></div>
         <main class="container-wrap">
           <div class="row justify-content-center">
             <div class="col-sm-5 col-lg-5 pa-6 order-sm-last">
               <div class="image ml-5">
                 <div class="imgShadow ml-3"></div>
-                <img src="{{ asset('images/detIntern.jfif')}}" alt="movie" class="imgDetailIntern"/>
+                <img src="{{ asset('images/intern/videographer.jfif')}}" alt="movie" class="imgDetailIntern"/>
                 </a>
               </div>
             </div>
@@ -141,22 +141,23 @@
                   </div><p class="ml-3">5.0</p><span class="divider"></span>Stars Group
                 </div>
                 <article class="desc">
-                  <h6 class="use-text-paragraph text-justify">PT Stars Group, which is located in the center of Jakarta, 
+                  <p class="use-text-paragraph text-justify">PT Stars Group, which is located in the center of Jakarta, 
                     is here to provide online sales services consisting of 
                     well-known brands such as Gucci, Rolex, Hermes. etc.
                     
                     The company certainly has many active users who 
                     frequently use PT Stars Group's application services. 
                     Then the company provides satisfying service to its 
-                    employees. </h6>
+                    employees. </p>
                 </article>
                 <div class="btn-area">
                   <a class="btn-flat secondary waves-effect mr-3" href="#">Profile Company</a>
-                  <a class="btn primary waves-effect" href="#">Send Your CV</a>
+                  <a class="btn primary waves-effect" href="#">Apply Now</a>
                 </div>
               </div>
             </div>
           </div>
+          <div data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center mt-5">
             <div class="col-lg-10 col-md-12 mt-5">
               <div class="card about">
@@ -195,6 +196,7 @@
               </div>
             </div>
           </div>
+        </div>
         </main>
         <footer class="footer invert">
           <div class="container">

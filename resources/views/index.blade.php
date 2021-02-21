@@ -51,7 +51,7 @@
               <nav class="nav-menu nav-auth">
                 <div class="hidden-xs-down">
                   <a class="btn btn-flat text-btn waves-effect" href="/login">login</a>
-                  <a class="btn secondary light button waves-effect" href="register.html">register</a>
+                  <a class="btn secondary light button waves-effect" href="/register">register</a>
                 </div>
                 <div class="menu-setting">
                   <div class="setting">
@@ -123,7 +123,7 @@
             <div class="root">
               <div class="video">
                 <div class="overlay"></div>
-                <img class="show-md-down" src="https://via.placeholder.com/1280x854/8d815b/FFFFFF" alt="cover" />
+                <img class="show-md-down" src="{{ asset('images/banner.jfif')}}" alt="cover" />
                 <img id="banner_cover" src="https://via.placeholder.com/1280x854/8d815b/FFFFFF" alt="cover" />
                 <div class="show-lg-up" id="youtube"></div>
                 <div class="caption">
@@ -138,9 +138,9 @@
                     </div>
                     <div class="row">
                       <div class="col-md-12">
-                        <p class="use-text-subtitle2">Vivamus sit amet interdum elit</p>
-                        <h2 class="use-text-title">Mancing Mania The Movie</h2>
-                        <p class="use-text-subtitle">On the air 01 . 11 . 20</p>
+                        <p class="use-text-subtitle2">Created by Devlife Company</p>
+                        <h2 class="use-text-title">Grow Jobs</h2>
+                        <p class="use-text-subtitle2">Layanan Informasi Lowongan Kerja & Magang</p>
                       </div>
                     </div>
                   </div>
@@ -158,7 +158,7 @@
                       <div class="inner-bg">
                         <div class="background">
                           <figure>
-                            <img src="{{ asset('images/internship.jpg')}}" alt="promotion" />
+                            <img src="{{ asset('images/intern/intern.jpg')}}" alt="promotion" />
                           </figure>
                         </div>
                         <div class="row">
@@ -184,7 +184,8 @@
                                 <h6 class="use-text-paragraph">Kami menyediakan lowongan magang untuk posisi Full-stack Developer dengan sistem Work From Home.</h6>
                               </article>
                               <div class="btn-area">
-                                <a class="btn primary waves-effect" href="#">Selengkapnya</a>
+                                <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
+                                <a class="btn btn-Apply" href="#">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -192,7 +193,7 @@
                             <div class="hidden-xs-down">
                               <div class="image">
                                 <figure>
-                                  <img src="{{ asset('images/internship.jpg')}}" width="330px" height="440px" alt="promotion" />
+                                  <img src="{{ asset('images/intern/intern.jpg')}}" width="330px" height="440px" alt="promotion" />
                                 </figure>
                               </div>
                             </div>
@@ -207,13 +208,13 @@
                       <div class="inner-bg">
                         <div class="background">
                           <figure>
-                            <img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="promotion" />
+                            <img src="{{ asset('images/intern/intern1.jpg')}}" height="360px" alt="promotion" />
                           </figure>
                         </div>
                         <div class="row">
                           <div class="col-sm-7 pa-0">
                             <div class="text">
-                              <h4><span class="use-text-subtitle2">Vivamus sit amet</span>The Lorem Ipsum Dolor Sit</h4>
+                              <h4><span class="use-text-subtitle2">Lowongan Magang</span>Business Analysts</h4>
                               <div class="property">
                                 <div class="star">
                                   <i class="material-icons star-icon" title="1">star</i>
@@ -227,14 +228,14 @@
                                   <i class="material-icons star-icon" title="5">star</i>
                                 </div>
 
-                                5.0<span class="divider"></span>2h 15m
+                                <p class="ml-3">5.0</p><span class="divider"></span>Moon Coorporation
                               </div>
                               <article class="desc">
-                                <h6 class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.</h6>
+                                <h6 class="use-text-paragraph">Kami Moon Coorporation menyediakan lowongan magang untuk para siswa/mahasiswa untuk menjadi Business Analysts pada perusahaan kami. Jika kalian tertarik untuk menjadi bagian dari perusahaan kami, Silahkan kirimkan CV kalian</h6>
                               </article>
                               <div class="btn-area">
-                                <a class="btn-flat secondary waves-effect" href="#">Watch Trailer</a>
-                                <a class="btn primary waves-effect" href="#">Watch Full Movie</a>
+                                <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
+                                <a class="btn btn-Apply" href="#">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -242,7 +243,7 @@
                             <div class="hidden-xs-down">
                               <div class="image">
                                 <figure>
-                                  <img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="promotion" />
+                                  <img src="{{ asset('images/intern/intern1.jpg')}}" height="360px" alt="promotion" />
                                 </figure>
                               </div>
                             </div>
@@ -256,13 +257,13 @@
                       <div class="inner-bg">
                         <div class="background">
                           <figure>
-                            <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                            <img src="{{ asset('images/intern/intern3.jpg')}}" height="360px" alt="promotion" />
                           </figure>
                         </div>
                         <div class="row">
                           <div class="col-sm-7 pa-0">
                             <div class="text">
-                              <h4><span class="use-text-subtitle2">Vivamus sit amet</span>The Lorem Ipsum Dolor Sit</h4>
+                              <h4><span class="use-text-subtitle2">Lowongan Magang</span>UI UX Designer</h4>
                               <div class="property">
                                 <div class="star">
                                   <i class="material-icons star-icon" title="1">star</i>
@@ -276,14 +277,14 @@
                                   <i class="material-icons star-icon" title="5">star</i>
                                 </div>
 
-                                5.0<span class="divider"></span>2h 15m
+                                <p class="ml-3">5.0</p><span class="divider"></span>Dream Company
                               </div>
                               <article class="desc">
-                                <h6 class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.</h6>
+                                <h6 class="use-text-paragraph">Kami Moon Coorporation menyediakan lowongan magang untuk para siswa/mahasiswa untuk menjadi UI UX Designer pada perusahaan kami. Jika kalian tertarik untuk menjadi bagian dari perusahaan kami, Silahkan kirimkan CV kalian</h6>
                               </article>
                               <div class="btn-area">
-                                <a class="btn-flat secondary waves-effect" href="#">Watch Trailer</a>
-                                <a class="btn primary waves-effect" href="#">Watch Full Movie</a>
+                                <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
+                                <a class="btn btn-Apply" href="#">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -291,7 +292,7 @@
                             <div class="hidden-xs-down">
                               <div class="image">
                                 <figure>
-                                  <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                                  <img src="{{ asset('images/intern/intern3.jpg')}}" height="360px" alt="promotion" />
                                 </figure>
                               </div>
                             </div>
@@ -305,13 +306,13 @@
                       <div class="inner-bg">
                         <div class="background">
                           <figure>
-                            <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                            <img src="{{ asset('images/intern/intern4.jpg')}}" height="360px" alt="promotion" />
                           </figure>
                         </div>
                         <div class="row">
                           <div class="col-sm-7 pa-0">
                             <div class="text">
-                              <h4><span class="use-text-subtitle2">Vivamus sit amet</span>The Lorem Ipsum Dolor Sit</h4>
+                              <h4><span class="use-text-subtitle2">Lowongan Magang</span>Waiters</h4>
                               <div class="property">
                                 <div class="star">
                                   <i class="material-icons star-icon" title="1">star</i>
@@ -325,14 +326,14 @@
                                   <i class="material-icons star-icon" title="5">star</i>
                                 </div>
 
-                                5.0<span class="divider"></span>2h 15m
+                                <p class="ml-3">5.0</p><span class="divider"></span>Up Normal
                               </div>
                               <article class="desc">
-                                <h6 class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.</h6>
+                                <h6 class="use-text-paragraph">Kami Moon Coorporation menyediakan lowongan magang untuk para siswa/mahasiswa untuk menjadi UI UX Designer pada perusahaan kami. Jika kalian tertarik untuk menjadi bagian dari perusahaan kami, Silahkan kirimkan CV kalian</h6>
                               </article>
                               <div class="btn-area">
-                                <a class="btn-flat secondary waves-effect" href="#">Watch Trailer</a>
-                                <a class="btn primary waves-effect" href="#">Watch Full Movie</a>
+                                <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
+                                <a class="btn btn-Apply" href="#">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -340,7 +341,7 @@
                             <div class="hidden-xs-down">
                               <div class="image">
                                 <figure>
-                                  <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                                  <img src="{{ asset('images/intern/intern4.jpg')}}" height="360px" alt="promotion" />
                                 </figure>
                               </div>
                             </div>
@@ -363,6 +364,7 @@
           </section><!-- ##### END PROMOTION #####-->
           <!-- ##### FEATURED #####-->
           <section class="space-top" id="featured">
+            <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">
             <div class="root">
               <div class="decoration">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
@@ -375,71 +377,75 @@
                 <div class="row spacing3">
                   <div class="col-md-3 py-10">
                     <div class="title-main align-left">
-                      <h4 class="primary-title">Featured</h4>
-                      <h4 class="secondary-title">Movies</h4>
+                      <h4 class="primary-title">Lowongan</h4>
+                      <h4 class="secondary-title">Magang</h4>
                     </div>
-                    <p class="use-text-paragrpah">Watch and download full film, seasons and episodes movies &amp; TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.</p>
+                    <p class="use-text-paragrpah text-justify">Kami menyediakan berbagai informasi lowongan kerja dan magang untuk berbagai siswa/mahasiswa. Silahkan kalian tentukan lowongan magang yang anda inginkan. </p>
+                    <a href="/interns" class="btn btn-infoMagang">Info Magang</a>
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">
                       <a class="btn-wrap waves-effect" href="detail-movie.html">
-                        <span class="figure">
-<i class="ion-arrow-right-b play"></i>
-<img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="Cras convallis lacus"/>
-<span class="figcaption">new</span>
+                        <span class="figure sectionMagang">
+                          <i class="ion-arrow-right-b play"></i>
+                          <img src="{{ asset('images/intern/intern5.jpg')}}" alt="Cras convallis lacus"/>
+                          <span class="figcaption ml-2">new</span>
                         </span>
-                        <span class="text">Cras convallis lacus</span>
+                        <span class="text">Quality Assurance</span>
                       </a>
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">
                       <a class="btn-wrap waves-effect" href="detail-movie.html">
-                        <span class="figure">
-<i class="ion-arrow-right-b play"></i>
-<img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="Cras convallis lacus"/>
-<span class="figcaption">new</span>
+                        <span class="figure sectionMagang">
+                          <i class="ion-arrow-right-b play"></i>
+                          <img src="{{ asset('images/intern/intern6.jpg')}}" height="420px" alt="Cras convallis lacus"/>
+                          <span class="figcaption ml-2">new</span>
                         </span>
-                        <span class="text">Cras convallis lacus</span>
+                        <span class="text">Project Manager</span>
                       </a>
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">
                       <a class="btn-wrap waves-effect" href="detail-movie.html">
-                        <span class="figure">
-<i class="ion-arrow-right-b play"></i>
-<img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="Cras convallis lacus"/>
-<span class="figcaption">new</span>
+                        <span class="figure sectionMagang">
+                          <i class="ion-arrow-right-b play"></i>
+                          <img src="{{ asset('images/intern/intern7.jpg')}}" alt="Cras convallis lacus"/>
+                          <span class="figcaption ml-3">new</span>
                         </span>
-                        <span class="text">Cras convallis lacus</span>
+                        <span class="text">Chief Manager Officer</span>
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            </div>
           </section><!-- ##### END FEATURED #####-->
           <!-- ##### TRENDING #####-->
           <section class="space-top" id="trending">
+            <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">
             <div class="root">
               <div class="hidden-xs-down">
                 <div class="grid-25">
-                  <img src="https://via.placeholder.com/320x370/ffa4a4/FFFFFF" alt="trending" />
+                  <img src="{{ asset('images/intern/marketing.jfif')}}" alt="trending" />
                   <a class="overlay waves-effect" href="javascript:void(0)">
                     <h5 class="headline">FREE Rent 3 Days</h5>
                   </a>
                 </div>
                 <div class="grid-50">
-                  <img src="https://via.placeholder.com/700x360/ffd7a4/757575" alt="trending" />
+                  <img src="{{ asset('images/intern/analis.jfif') }}" alt="trending" />
                   <a class="overlay waves-effect" href="javascript:void(0)">
-                    <h3 class="display-2"> <i class="ion-coffee"></i>FREE<span>Movies</span></h3>
+                    <h3 class="display-2"> <i class="ion-coffee"></i></h3>
+                    <h5 class="headline analisis">Intern System Analysts</h5>
                   </a>
                 </div>
                 <div class="grid-25">
-                  <img src="https://via.placeholder.com/320x370/d0d4e6/757575" alt="trending" />
+                  <img src="{{ asset('images/intern/videographer.jfif') }}" alt="trending" />
                   <a class="overlay waves-effect" href="javascript:void(0)">
-                    <h5 class="headline">FREE Up to 5 Episodes</h5>
+                    <h5 class="headline">Intern Videographer</h5>
                   </a>
                 </div>
               </div>
@@ -471,6 +477,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </section><!-- ##### END TRENDING #####-->
           <!-- ##### CATEGORIES #####-->
@@ -1056,8 +1063,8 @@
           <div class="alert full alert-dismissible fade show notification" role="alert">
             <div class="wrapper">
               <div class="content">
-                <div class="action">This is an example of a message that is commonly used for important information to visitors or users. Please click the button beside to close this message.</div>
-                <button class="btn btn-outlined waves-effect waves-light white" type="button" data-dismiss="alert" aria-label="Close">Accept</button>
+                <div class="action">Mohon untuk login ke akun anda terlebih dahulu. Agar kalian bisa melihat semua informasi tanpa harus login kembali.</div>
+                <a class="btn btn-outline-success info" href="/login">login</a>
               </div>
             </div>
           </div>
