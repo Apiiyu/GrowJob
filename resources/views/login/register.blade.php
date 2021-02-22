@@ -36,7 +36,6 @@
             </div>
             <div class="card form-box fragment-fadeUp">
               <div class="hidden-sm-down">
-                
               </div>
               <div class="auth-frame">
                 <div class="row">

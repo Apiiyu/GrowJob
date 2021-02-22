@@ -35,17 +35,13 @@
               </svg>
             </div>
             <div class="card form-box fragment-fadeUp">
-              <div class="hidden-sm-down">
-                <a class="waves-effect btn-icon backtohome" href="index.html">
-                  {{--  --}}
-                  
-                  <span><i class="ion-ios-home-outline"></i><i class="ion-ios-home-thin-left"></i></span>
-                </a>
-              </div>
             </div>
               <div class="auth-frame">
                 <div class="row">
                   <div class="col-md-5">
+                    <a class="waves-effect" href="/">
+                      <img src="{{ asset('images/home.png') }}" class="iconHome" alt="icon">
+                    </a>
                     <div class="hidden-sm-down">
                       <div class="greeting">
                         <div class="logo"><img src="{{ asset('images/movie-logo.svg')}}" alt="logo">
@@ -106,6 +102,16 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden-sm-down">
+            <div class="alert full alert-dismissible fade show notification" role="alert">
+              <div class="wrapper">
+                <div class="content">
+                  <div class="action">Mohon maaf untuk sementara anda belum bisa melakukan login menggunakan akun social media anda. Silahkan login menggunakan akun <b>GrowJobs</b>  anda. Jika anda belum memiliki akun silahkan registrasi terlebih dahulu</div>
+                  <a class="btn btn-outline-success info" href="/registrasi">Registrasi</a>
                 </div>
               </div>
             </div>

@@ -39,10 +39,10 @@
                     <ul>
                       <li class="d-none"><a href="#banner"></a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="#banner">Home</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="#promotions">Internship</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="#top">Service</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="#all">all categories</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="#pricing">pricing</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#magang">Internship</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#loker">Job Vacancies</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#all">Contact Us</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#pricing">News</a></li>
                     </ul>
                   </div>
                 </div>
@@ -124,7 +124,7 @@
               <div class="video">
                 <div class="overlay"></div>
                 <img class="show-md-down" src="{{ asset('images/banner.jfif')}}" alt="cover" />
-                <img id="banner_cover" src="https://via.placeholder.com/1280x854/8d815b/FFFFFF" alt="cover" />
+                <img id="banner_cover" src="{{ asset('images/banner.jfif')}}" alt="cover" />
                 <div class="show-lg-up" id="youtube"></div>
                 <div class="caption">
                   <div class="container">
@@ -150,6 +150,7 @@
           </section><!-- ##### END BANNER #####-->
           <!-- ##### PROMOTION #####-->
           <section id="promotions">
+            <section id="magang">
             <div class="root">
               <div class="slider-wrap">
                 <div class="anim-slider">
@@ -361,9 +362,10 @@
                 </div>
               </div>
             </div>
-          </section><!-- ##### END PROMOTION #####-->
+          </section>
+        </section><!-- ##### END PROMOTION #####-->
           <!-- ##### FEATURED #####-->
-          <section class="space-top" id="featured">
+          <section class="space-top" id="magang">
             <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">
             <div class="root">
               <div class="decoration">
@@ -424,212 +426,9 @@
             </div>
             </div>
           </section><!-- ##### END FEATURED #####-->
-          <!-- ##### TRENDING #####-->
-          <section class="space-top" id="trending">
+
+          <section class="space-top" id="loker">
             <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">
-            <div class="root">
-              <div class="hidden-xs-down">
-                <div class="grid-25">
-                  <img src="{{ asset('images/intern/marketing.jfif')}}" alt="trending" />
-                  <a class="overlay waves-effect" href="javascript:void(0)">
-                    <h5 class="headline">FREE Rent 3 Days</h5>
-                  </a>
-                </div>
-                <div class="grid-50">
-                  <img src="{{ asset('images/intern/analis.jfif') }}" alt="trending" />
-                  <a class="overlay waves-effect" href="javascript:void(0)">
-                    <h3 class="display-2"> <i class="ion-coffee"></i></h3>
-                    <h5 class="headline analisis">Intern System Analysts</h5>
-                  </a>
-                </div>
-                <div class="grid-25">
-                  <img src="{{ asset('images/intern/videographer.jfif') }}" alt="trending" />
-                  <a class="overlay waves-effect" href="javascript:void(0)">
-                    <h5 class="headline">Intern Videographer</h5>
-                  </a>
-                </div>
-              </div>
-              <div class="hidden-sm-up">
-                <div class="slick-carousel" id="trending_carousel">
-                  <div class="item">
-                    <div class="grid-25">
-                      <img src="https://via.placeholder.com/320x370/ffa4a4/FFFFFF" alt="trending" />
-                      <a class="overlay waves-effect" href="javascript:void(0)">
-                        <h5 class="headline">FREE Rent 3 Days</h5>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="grid-50">
-                      <img src="https://via.placeholder.com/700x360/ffd7a4/757575" alt="trending" />
-                      <a class="overlay waves-effect" href="javascript:void(0)">
-                        <h3 class="display-2"> <i class="ion-coffee"></i>FREE<span>Movies</span></h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="grid-25">
-                      <img src="https://via.placeholder.com/320x370/d0d4e6/757575" alt="trending" />
-                      <a class="overlay waves-effect" href="javascript:void(0)">
-                        <h5 class="headline">FREE Up to 5 Episodes</h5>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-          </section><!-- ##### END TRENDING #####-->
-          <!-- ##### CATEGORIES #####-->
-          <section class="space-top" id="top">
-            <div class="root">
-              <div class="container fixed-width-lg-up">
-                <div class="row spacing3">
-                  <div class="col-md-6 pa-3 pt-10">
-                    <div class="title-main align-left">
-                      <h4 class="primary-title">Top</h4>
-                      <h4 class="secondary-title">Categories</h4>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6 pa-3">
-                    <a class="category full button-base waves-effect" style="background-color: #E79A1C">
-                      <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Academy Awards" />
-                      <span class="property"><span class="title-category">Academy Awards</span><span class="total use-text-paragraph">24 Films</span></span>
-                    </a>
-                  </div>
-                  <div class="col-md-3 col-sm-6 pa-3">
-                    <a class="category full button-base waves-effect" style="background-color: #E91E63">
-                      <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Animations" />
-                      <span class="property"><span class="title-category">Animations</span><span class="total use-text-paragraph">24 Films</span></span>
-                    </a>
-                  </div>
-                </div>
-                <div class="row spacing3">
-                  <div class="col-md-6 py-0 px-3">
-                    <div class="category half-char" style="background-color: #1A237E">
-                      <img class="shadow" src="https://i.ibb.co/CH5gQ02/man.png" alt="Actions" />
-                      <img src="https://i.ibb.co/CH5gQ02/man.png" alt="Actions" />
-                      <span class="property">
-<span class="title-category use-text-title2">Actions</span><span class="total use-text-subtitle2">24 Films</span><span class="hidden-xs-down"><a class="btn btn-outlined white secondary-text button block waves-effect">Explore</a></span>
-                      </span>
-                    </div>
-                    <div class="row spacing3">
-                      <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-0 pe-sm-3">
-                        <a class="category full button-base waves-effect" style="background-color: #14A8B9">
-                          <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Romance Drama" />
-                          <span class="property"><span class="title-category">Romance Drama</span><span class="total use-text-paragraph">24 Films</span></span>
-                        </a>
-                      </div>
-                      <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-3 pe-sm-0">
-                        <a class="category full button-base waves-effect" style="background-color: #2AA845">
-                          <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Commedy" />
-                          <span class="property"><span class="title-category">Commedy</span><span class="total use-text-paragraph">24 Films</span></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 py-0 px-3">
-                    <div class="category full-char" style="background-color: #ED3626">
-                      <img class="shadow" src="https://i.ibb.co/7z9WN0t/woman.png" alt="Super Heroes" />
-                      <img src="https://i.ibb.co/7z9WN0t/woman.png" alt="Super Heroes" />
-                      <span class="property">
-<span class="title-category use-text-title2">Super Heroes</span><span class="total use-text-subtitle2">24 Films</span><span class="hidden-xs-down"><a class="btn btn-outlined white secondary-text button block waves-effect">Explore</a></span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section><!-- ##### END CATEGORIES #####-->
-          <!-- ##### ALL CATEGORIES #####-->
-          <section class="space-top-short" id="all">
-            <div class="root">
-              <div class="container">
-                <div class="title-main align-center">
-                  <h4 class="primary-title">All</h4>
-                  <h4 class="secondary-title">Categories</h4>
-                </div>
-                <div class="carousel-wrap"><button class="btn nav prev waves-effect" id="prev_product"><i class="material-icons">arrow_back</i></button><button class="btn nav next waves-effect" id="next_product"><i class="material-icons">arrow_forward</i></button>
-                  <div class="slick-carousel" id="product_carousel">
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-heart-broken"></i></span></span>
-                        <span class="text">Romantic</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-planet"></i></span></span>
-                        <span class="text">sci-fi</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-android-contact"></i></span></span>
-                        <span class="text">commedy</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-ios-star"></i></span></span>
-                        <span class="text">super heroes</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-ios-bolt"></i></span></span>
-                        <span class="text">actions</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-ios-videocam"></i></span></span>
-                        <span class="text">hollywood</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-heart-broken"></i></span></span>
-                        <span class="text">Romantic</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-planet"></i></span></span>
-                        <span class="text">sci-fi</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-android-contact"></i></span></span>
-                        <span class="text">commedy</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-ios-star"></i></span></span>
-                        <span class="text">super heroes</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-ios-bolt"></i></span></span>
-                        <span class="text">actions</span></span>
-                      </a>
-                    </div>
-                    <div class="item">
-                      <a class="simple-thumb waves-effect" href="detail-movie.html">
-                        <span class="wrap"><span class="figure"><span><i class="ion-ios-videocam"></i></span></span>
-                        <span class="text">hollywood</span></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section><!-- ##### END ALL CATEGORIES #####-->
-          <!-- ##### PRICING #####-->
-          <section class="space-top" id="pricing">
             <div class="root">
               <div class="decoration">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
@@ -638,92 +437,59 @@
                   </g>
                 </svg>
               </div>
-              <div class="container fixed-width-lg-up">
-                <div class="title-main align-center">
-                  <h4 class="primary-title">Flexible</h4>
-                  <h4 class="secondary-title">Pricing and Plan</h4>
-                </div>
-                <div class="pricing-wrap">
-                  <section>
-                    <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="0.4s" data-wow-duration="0.4s">
-                      <div class="card pricing-card basic">
-                        <div class="title-card">
-                          <p>Basic</p>
-                          <h4 class="display-1">Free</h4>
-                        </div>
-                        <ul>
-                          <li>Nam sollicitudin dignissim</li>
-                          <li>Cras convallis lacus</li>
-                          <li>Quisque ut metus</li>
-                        </ul>
-                        <div class="btn-area">
-                          <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-                          <a class="btn button btn-large waves-effect secondary" href="#">Choose Plan</a>
-                        </div>
-                      </div>
+              <div class="container fixed width-md-up">
+                <div class="row spacing3">
+                  <div class="col-md-3 py-10">
+                    <div class="title-main align-left">
+                      <h4 class="primary-title">Lowongan</h4>
+                      <h4 class="secondary-title">Pekerjaan</h4>
                     </div>
-                    <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="0.6s" data-wow-duration="0.4s">
-                      <div class="card pricing-card value">
-                        <div class="title-card">
-                          <p>Best Value</p>
-                          <h4 class="display-1"><span>$</span>24</h4>
-                        </div>
-                        <ul>
-                          <li>Nam sollicitudin dignissim</li>
-                          <li>Cras convallis lacus</li>
-                          <li>Quisque ut metus</li>
-                          <li>Vivamus sit amet</li>
-                          <li>Cras convallis lacus orci</li>
-                        </ul>
-                        <div class="btn-area">
-                          <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-                          <a class="btn button btn-large waves-effect primary" href="#">Choose Plan</a>
-                        </div>
-                      </div>
+                    <p class="use-text-paragrpah text-justify">Kami menyediakan berbagai informasi lowongan kerja yang valid bagi seluruh masyarakat indonesia. Silahkan kalian pilih pekerjaan yang anda inginkan. </p>
+                    <a href="/interns" class="btn btn-infoMagang">Info Loker</a>
+                  </div>
+                  <div class="col-md-3 col-sm-4">
+                    <div class="card movie-thumb">
+                      <a class="btn-wrap waves-effect" href="detail-movie.html">
+                        <span class="figure sectionMagang">
+                          <i class="ion-arrow-right-b play"></i>
+                          <img src="{{ asset('images/intern/marketing.jfif')}}" alt="Cras convallis lacus"/>
+                          <span class="figcaption ml-2">new</span>
+                        </span>
+                        <span class="text">Marketing</span>
+                      </a>
                     </div>
-                    <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="0.8s" data-wow-duration="0.4s">
-                      <div class="card pricing-card">
-                        <div class="title-card">
-                          <p>Pro</p>
-                          <h4 class="display-1"><span>$</span>54</h4>
-                        </div>
-                        <ul>
-                          <li>Nam sollicitudin dignissim</li>
-                          <li>Cras convallis lacus</li>
-                          <li>Nulla lobortis nunc</li>
-                          <li>Vitae scelerisque</li>
-                          <li>Duis sed augue</li>
-                        </ul>
-                        <div class="btn-area">
-                          <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-                          <a class="btn button btn-large waves-effect primary" href="#">Choose Plan</a>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4">
+                    <div class="card movie-thumb">
+                      <a class="btn-wrap waves-effect" href="detail-movie.html">
+                        <span class="figure sectionMagang">
+                          <i class="ion-arrow-right-b play"></i>
+                          <img src="{{ asset('images/intern/analis.jfif') }}" height="420px" alt="Cras convallis lacus"/>
+                          <span class="figcaption ml-2">new</span>
+                        </span>
+                        <span class="text">System Analysts</span>
+                      </a>
                     </div>
-                    <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="1s" data-wow-duration="0.4s">
-                      <div class="card pricing-card">
-                        <div class="title-card">
-                          <p>Enterprise</p>
-                          <h4 class="display-1"><span>$</span>99</h4>
-                        </div>
-                        <ul>
-                          <li>Nam sollicitudin dignissim</li>
-                          <li>Pellentesque ac bibendum </li>
-                          <li>Vestibulum consequat</li>
-                          <li>Donec commodo</li>
-                          <li>Duis tristique metus</li>
-                        </ul>
-                        <div class="btn-area">
-                          <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-                          <a class="btn button btn-large waves-effect primary" href="#">Choose Plan</a>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4">
+                    <div class="card movie-thumb">
+                      <a class="btn-wrap waves-effect" href="detail-movie.html">
+                        <span class="figure sectionMagang">
+                          <i class="ion-arrow-right-b play"></i>
+                          <img src="{{ asset('images/intern/videographer.jfif') }}" alt="Cras convallis lacus"/>
+                          <span class="figcaption ml-3">new</span>
+                        </span>
+                        <span class="text">Videographer</span>
+                      </a>
                     </div>
-                  </section>
+                  </div>
                 </div>
               </div>
             </div>
-          </section><!-- ##### END PRICING #####-->
+            </div>
+          </section>
+          <!-- ##### TRENDING #####-->
+          <!-- ##### END PRICING #####-->
           <!-- ##### FAQ #####-->
           <section class="space-top" id="faq">
             <div class="root">
@@ -754,7 +520,7 @@
                         </li>
                         <li class="accordion-content paper">
                           <div class="collapsible-header content">
-                            <p class="heading">In mi nulla, fringilla vestibulum?</p><i class="material-icons right arrow">expand_more</i>
+                            <p class="heading">In mi nulla, fringilla vestibulum?</p><i class="material-icons down arrow">expand_more</i>
                           </div>
                           <div class="collapsible-body detail">
                             <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </p>
@@ -800,7 +566,7 @@
                     <div class="item">
                       <div class="news-card">
                         <figure>
-                          <img src="https://via.placeholder.com/967x725/ea6d6d/fff" alt="thumb" />
+                          <img src="{{ asset('images/')}}" alt="thumb" />
                         </figure>
                         <div class="desc">
                           <div class="text">

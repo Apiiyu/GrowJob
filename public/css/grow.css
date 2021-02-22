@@ -57,22 +57,12 @@
         border-radius: 40%;
         top: 0;
         margin: 2rem 25rem 0 0;
-        letter-spacing: .5px;
         -webkit-transition: background-color .2s ease-out;
         -o-transition: background-color .2s ease-out;
         transition: background-color .2s ease-out;
         cursor: pointer;
         outline: 0;
         border: none;
-        -webkit-tap-highlight-color: transparent;
-        background: none !important;
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        padding: 0;
-    }
-
-    .iconHome:hover::before{
-        opacity: 0.6;
     }
 
     .iconHome::before{
@@ -90,6 +80,11 @@
         -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
         -o-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
         transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    .iconHome:hover{
+        background-color: #eaeaea;
+        border-radius: 50%;
     }
 
     .namaBelakang{
@@ -113,6 +108,54 @@
         background: #FB3E6C;
         border-radius: 5px !important;
         color: #fff;
+    }
+
+    .btn-infoLoker{
+        width: 240px;
+        height: 60px;
+        padding: 14px 34px;
+        background: #FB3E6C;
+        border-radius: 5px !important;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .secMenu{
+        background-color: #fff !important;
+        margin-top: 1rem;
+    }
+
+    .active{
+        color: #FB3E6C !important;
+    }
+
+    .gambarMagang{
+        width: 420px;
+        height: 220px;
+        border-radius: 30px;
+    }
+
+    .selengkapnya{
+        vertical-align: bottom !important;
+    }
+
+    .selengkapnya:hover{
+        background-color: #03ACF2;
+    }
+
+    .imgMagang{
+        float: right;
+        clear: both;
+    }
+
+    .textMagang{
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        clear: both;
     }
 }
 
