@@ -9,7 +9,7 @@
         <div class="page-wrap">
           <div class="hidden-md-up">
             <div class="logo logo-header">
-              <a href="index.html">
+              <a href="register">
             <img src="{{ asset('images/movie-logo.svg') }}" alt="logo">
                 <p class="use-text-subtitle2">Movie</p>
               </a>
@@ -59,7 +59,7 @@
                           <div class="title-secondary align-left">
                             <h3>login</h3>
                           </div>
-                          <a class="btn btn-flat waves-effect button-link" href="register.html">
+                          <a class="btn btn-flat waves-effect button-link" href="register">
                             <i class="material-icons icon left mr-1">arrow_forward</i>Create new account
                           </a>
                         </div>
@@ -71,12 +71,41 @@
                         <div class="separator">
                           <p>Or login with email</p>
                         </div>
-                        <form id="login_form" method="POST">
+                        <form id="login_form" action="{{ url('prosesLogin') }}" method="POST">
+                          {{ csrf_field() }}
+                          {{-- Error Alert --}}
+
+                          @error('login_gagal')
+                          {{-- <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                          </span> --}}
+                          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                              {{-- <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span> --}}
+                              <span class="alert-inner--text"><strong>Warning!</strong> {{ $message }}</span>
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          @enderror
+
+                          @if(session('error'))
+                          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              {{session('error')}}
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          @endif
+
                           <div class="row spacing3">
                             <div class="col-sm-12">
                               <div class="input-field filled dark">
-                                <input class="validate" id="email" type="email" name="email" required>
+                                <input class="validate" id="email" type="text" name="email" required>
                                 <label for="email">Email</label>
+
+                                @if($errors->has('username'))
+                                  <span class="error">{{ $errors->first('username') }}</span>
+                                @endif
                               </div>
                             </div>
                             <div class="col-sm-12">
