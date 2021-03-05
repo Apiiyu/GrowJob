@@ -71,14 +71,16 @@
                         <div class="separator">
                           <p>Or login with email</p>
                         </div>
-                        <form id="login_form" action="{{ url('prosesLogin') }}" method="POST">
-                          {{ csrf_field() }}
+                        <form method="POST" action="{{ route('login') }}">
+                          @csrf
+                          
                           {{-- Error Alert --}}
 
-                          @error('login_gagal')
-                          {{-- <span class="invalid-feedback" role="alert">
+                          @error('email')
+                            <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
-                          </span> --}}
+                            </span>
+                          
                           <div class="alert alert-warning alert-dismissible fade show" role="alert">
                               {{-- <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span> --}}
                               <span class="alert-inner--text"><strong>Warning!</strong> {{ $message }}</span>
@@ -88,33 +90,27 @@
                           </div>
                           @enderror
 
-                          @if(session('error'))
-                          <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                              {{session('error')}}
-                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          @endif
-
                           <div class="row spacing3">
                             <div class="col-sm-12">
                               <div class="input-field filled dark">
-                                <input class="validate" id="email" type="text" name="email" required>
+                                <input class="validate" id="email" type="text" name="email" required autocomplete="off">
                                 <label for="email">Email</label>
-
-                                @if($errors->has('username'))
-                                  <span class="error">{{ $errors->first('username') }}</span>
-                                @endif
                               </div>
                             </div>
+
                             <div class="col-sm-12">
                               <div class="input-field filled dark">
                                 <input class="validate" id="password" type="password" name="password" required>
                                 <label for="password">Password</label>
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                               </div>
                             </div>
                           </div>
+
                           <div class="form-helper mt-4">
                             <div class="form-control-label">
                               <label>

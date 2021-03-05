@@ -72,51 +72,51 @@
                         <div class="separator">
                           <p>Atau registrasi dengan email</p>
                         </div>
-                        <form id="register_form" method="POST">
+                        
+                        <form method="POST" action="{{ route('register') }}">
+                          @csrf
                           <div class="row spacing3">
-                            <div class="col-sm-6">
-                              <div class="input-field filled dark">
-                                <input class="validate" id="name1" type="text" name="name" required>
-                                <label for="name1">Nama Depan</label>
-                              </div>
-                            </div>
-                            <div class="col-sm-5 ml-5">
-                              <div class="input-field filled dark">
-                                <input class="validate" id="name2"  type="text" name="name" required>
-                                <label for="name2">Nama Belakang</label>
-                              </div>
-                            </div>
                             <div class="col-sm-12">
                               <div class="input-field filled dark">
-                                <input class="validate" id="username" type="text" name="username" required>
-                                <label for="username">Username</label>
+                                <input class="validate" id="name" type="text" name="name" autofocus required autocomplete="off">
+                                <label for="name">Nama</label>
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                               </div>
                             </div>
+
                             <div class="col-sm-12">
                               <div class="input-field filled dark">
-                                <input class="validate" id="email" type="email" name="email" required>
+                                <input class="validate @error('email') is-invalid @enderror" id="email" type="email" name="email" required autocomplete="off">
                                 <label for="email">Email</label>
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                               </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-12">
                               <div class="input-field filled dark mq-md-up" data-class="me-2">
-                                <input class="validate" id="password" type="password" name="password" required>
+                                <input class="validate @error('password') is-invalid @enderror" autocomplete="new-password" id="password" type="password" name="password" required>
                                 <label for="password">Kata Sandi</label>
                               </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="input-field filled dark mq-md-up" data-class="ms-2">
-                                <input class="validate" id="confirm" type="password" name="confirm" data-validation="confirmation" data-validation-confirm="password" required>
-                                <label for="confirm">Konfirmasi Kata Sandi</label>
-                              </div>
+                              @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="col-sm-12">
-                              <div class="input-field filled dark">
-                                <input type="text" id="nomor" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
-                                <label for="nomor">No. Handphone</label>
+                              <div class="input-field filled dark mq-md-up" data-class="ms-2">
+                                <input class="validate" name="password_confirmation" id="password-confirm" type="password" required autocomplete="new-password" data-validation="confirmation" data-validation-confirm="password">
+                                <label for="password-confirm">Konfirmasi Kata Sandi</label>
                               </div>
                             </div>
-                          </div>
+
                           <div class="btn-area">
                             <div class="form-helper">
                               <div class="form-control-label">
@@ -126,7 +126,7 @@
                                 </label>
                               </div>
                             </div>
-                            <button class="btn secondary btn-large waves-effect" type="submit">Selanjutnya</button>
+                            <button class="btn secondary btn-large waves-effect" type="submit">Register</button>
                           </div>
                         </form>
                       </div>

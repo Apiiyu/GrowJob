@@ -45,12 +45,18 @@
                   </div>
                 </div>
               </nav>
+              <a class="mr-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+              </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+            </form>
               <div class="hidden-md-down"><span class="divider"></span></div>
-              <nav class="nav-menu nav-auth invert">
+              <nav class="nav-menu nav-auth">
                 <div class="hidden-xs-down">
-                  <a class="btn btn-flat text-btn waves-effect" href="login.html">login</a>
-                  <a class="btn secondary light button waves-effect" href="register.html">register</a>
-                </div>
+                  <p class="namaUser mt-3">Selamat Datang, {{ Auth::user()->name }}</p>
+              </div>
                 <div class="menu-setting">
                   <div class="setting">
                     <button class="btn-icon waves-effect btn-small m-2 dropdown-trigger" data-target="dropdown_config" type="button" data-align="left">

@@ -47,11 +47,17 @@
                   </div>
                 </div>
               </nav>
+              <a class="mr-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+              </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+            </form>
               <div class="hidden-md-down"><span class="divider"></span></div>
               <nav class="nav-menu nav-auth">
                 <div class="hidden-xs-down">
-                  <a class="btn btn-flat text-btn waves-effect" href="/login">login</a>
-                  <a class="btn secondary light button waves-effect" href="/register">register</a>
+                  <p class="namaUser mt-3">Selamat Datang, {{ Auth::user()->name }}</p>
                 </div>
                 <div class="menu-setting">
                   <div class="setting">
