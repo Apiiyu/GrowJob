@@ -20,24 +20,11 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('interns/{slug}', [InternController::class, 'show']);
 
-
-Route::get('login', [AuthController::class, 'login'])->name('login');
-Route::post('prosesLogin', [AuthController::class, 'login'])->name('prosesLogin');
-
-Route::group(['middleware' => ['auth']], function(){
-    Route::group(['middleware' => ['authLogin:admin']], function(){
-        Route::get('admin', [AdminController::class, 'index'])->name('admin'); 
-    });
-    
-    Route::group(['middleware' => ['authLogin:user']], function(){
-        
-    });
-});
-Route::view('/magang', 'intern/intern');
+Route::get('magang', [InternController::class, 'index']);
 
 Route::view('detail', 'intern/detail');
 
-Route::get('register', [AuthController::class, 'register']);
+Route::get('registrasi', [AuthController::class, 'register']);
 
 Auth::routes();
 
