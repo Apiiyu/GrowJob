@@ -62,6 +62,7 @@
     <link href="{{ asset('css/styles.css')}}" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/grow.css') }}">
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> --}}
 </head>
 <body>
     @yield('webContent')
@@ -84,25 +85,8 @@
     <script src="{{ asset('js/scripts.js')}}"></script>
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> --}}
 
-    <script src="./assets/js/vendors/jquery.min.js"></script>
-  <script src="./assets/js/vendors/bootstrap.min.js"></script>
-  <script src="./assets/js/vendors/enquire.min.js"></script>
-  <script src="./assets/js/vendors/jquery.enllax.min.js"></script>
-  <script src="./assets/js/vendors/jquery.form-validator.min.js"></script>
-  <script src="./assets/js/vendors/jquery.touchSwipe.min.js"></script>
-  <script src="./assets/js/vendors/jquery.youtubebackground.js"></script>
-  <script src="./assets/js/vendors/pace.min.js"></script>
-  <script src="./assets/js/vendors/slick.min.js"></script>
-  <script src="./assets/js/vendors/wow.min.js"></script>
-  <script src="./assets/js/vendors/jquery.navScroll.min.js"></script>
-  <script src="./assets/js/vendors/parallax.min.js"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
-  <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <script src="./assets/js/vendors/materialize.js"></script>
-  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
-  <script src="./assets/js/scripts.js"></script>
-</body>
     <script>
         AOS.init();
       </script>

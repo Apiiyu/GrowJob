@@ -1,5 +1,5 @@
-@extends('layouts.app')
-
+@extends('app.app')
+@section('webTitle', 'Grow Jobs - Registarsi')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

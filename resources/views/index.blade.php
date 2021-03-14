@@ -451,7 +451,7 @@
                       <h4 class="secondary-title">Pekerjaan</h4>
                     </div>
                     <p class="use-text-paragrpah text-justify">Kami menyediakan berbagai informasi lowongan kerja yang valid bagi seluruh masyarakat indonesia. Silahkan kalian pilih pekerjaan yang anda inginkan. </p>
-                    <a href="/interns" class="btn btn-infoMagang">Info Loker</a>
+                    <a href="interns" class="btn btn-infoLoker">Info Loker</a>
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">
@@ -496,7 +496,51 @@
           </section>
           <!-- ##### TRENDING #####-->
           <!-- ##### END PRICING #####-->
+          
+          <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF" class="mt-5">
+            <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">
+            <div style="font-family: 'Poppins', sans-serif;">
+        
+            <div class="text-center title-text-content-2-1">
+              <h1 class="text-title-content-2-1">3 Keys Benefit</h1>
+              <p class="text-caption-content-2-1" style="  margin-left: 3rem; margin-right: 3rem;">You can easily manage your business with a powerful tools</p>
+            </div>
+        
+            <div class="grid-padding-content-2-1 text-center">
+              <div class="row">
+                <div class="col-lg-4 column-content-2-1">
+                  <div class="icon-content-2-1">
+                    <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-2.png" alt="">
+                  </div>
+                    <h3 class="icon-content-2-1-title">Easy to Operate</h3>
+                    <p class="icon-content-2-1-caption">This can easily help you to<br>  
+                      grow up your business fast</p>            
+                </div>
+                <div class="col-lg-4 column-content-2-1">
+                  <div class="icon-content-2-1">
+                    <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-3.png" alt="">
+                  </div>
+                    <h3 class="icon-content-2-1-title">Real-Time Analytic</h3>
+                    <p class="icon-content-2-1-caption">With real-time analytics, you<br>
+                      can check data in real time</p>
+                </div>
+                <div class="col-lg-4 column-content-2-1">
+                  <div class="icon-content-2-1">
+                    <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-4.png" alt="">
+                  </div>
+                    <h3 class="icon-content-2-1-title">Very Full Secured</h3>
+                    <p class="icon-content-2-1-caption">With real-time analytics, we<br>
+                      will guarantee your data</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </section>
+          
           <!-- ##### FAQ #####-->
+
+
           <section class="space-top" id="faq">
             <div class="root">
               <div class="container fixed-width">
@@ -831,7 +875,7 @@
           </div>
         </div><!-- ##### END PAGE-NAV #####-->
         <!-- ##### NOTIFICATION #####-->
-        <div class="hidden-sm-down">
+        {{-- <div class="hidden-sm-down">
           <div class="alert full alert-dismissible fade show notification" role="alert">
             <div class="wrapper">
               <div class="content">
@@ -840,7 +884,7 @@
               </div>
             </div>
           </div>
-        </div><!-- ##### END NOTIFICATION #####-->
+        </div><!-- ##### END NOTIFICATION #####--> --}}
       </div>
     </div>
   </div>

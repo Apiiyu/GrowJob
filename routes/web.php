@@ -18,9 +18,8 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('interns/{slug}', [InternController::class, 'show']);
-
 Route::get('magang', [InternController::class, 'index']);
+Route::get('magang/{slug}', [InternController::class, 'show']);
 
 Route::view('detail', 'intern/detail');
 

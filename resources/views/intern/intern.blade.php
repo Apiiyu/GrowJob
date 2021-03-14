@@ -10,75 +10,41 @@
       </ol>
 
     <div class="container ">
-      <div data-aos="fade-down" data-aos-duration="3000">
-
-      <div class="card">
-        <div class="card-header"><b>Videographer Internship</b></div>
+      @foreach($dataMagang as $Magang)
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="card">
+            <div class="card-header"><b>{{ $Magang->title }}</b></div>
         
-        <div class="card-body">
-          <div class="imgMagang">
+          <div class="card-body">
+            <div class="imgMagang">
             <img src="{{ asset('images/intern/videographer.jfif') }}" class="gambarMagang justify-content-lg-start" alt="imgMagang" >
           </div>
 
           <div class="textMagang">
-            <h6 class="use-text-paragraph text-justify ml-4">Kami Moon Coorporation menyediakan lowongan magang untuk para siswa/mahasiswa untuk menjadi UI UX Designer pada perusahaan kami. Jika kalian tertarik untuk menjadi bagian dari perusahaan kami, Silahkan kirimkan CV kalian.</h6>
+            <h6 class="use-text-paragraph text-justify ml-4">{{ Str::limit($Magang->body, 300) }}</h6>
               
             <a class="btn btn-infoMagang font-weight-bold selengkapnya w-30 h-25 ml-4 mt-4" href="#">Selengkapnya</a>
           </div>
         </div>
                       
-        <div class="card-header">Published on 26-Feb-2021</div>
-      </div>
-    </div>
-
-    <div data-aos="fade-up" data-aos-duration="3000">
-      <div class="card">
-        <div class="card-header"><b>Marketing Internship</b></div>
-        
-        <div class="card-body">
-          <div class="imgMagang">
-            <img src="{{ asset('images/intern/marketing.jfif') }}" class="gambarMagang justify-content-lg-start" alt="imgMagang" >
-          </div>
-
-          <div class="textMagang">
-            <h6 class="use-text-paragraph text-justify ml-4">Kami Moon Coorporation menyediakan lowongan magang untuk para siswa/mahasiswa untuk menjadi UI UX Designer pada perusahaan kami. Jika kalian tertarik untuk menjadi bagian dari perusahaan kami, Silahkan kirimkan CV kalian.</h6>
-              
-            <a class="btn btn-infoMagang font-weight-bold selengkapnya w-30 h-25 ml-4 mt-4" href="#">Selengkapnya</a>
-          </div>
+          <div class="card-header">Published on 26-Feb-2021</div>
         </div>
-                      
-        <div class="card-header">Published on 03-Feb-2021</div>
+      </div>
+      @endforeach
+
+      <div class="pagination">
+        {{ $dataMagang->links() }}
       </div>
     </div>
-
-    <div data-aos="fade-up" data-aos-duration="3000">
-      <div class="card">
-        <div class="card-header"><b>System Analysts Internship</b></div>
-        
-        <div class="card-body">
-          <div class="imgMagang">
-            <img src="{{ asset('images/intern/analis.jfif') }}" class="gambarMagang justify-content-lg-start" alt="imgMagang" >
-          </div>
-
-          <div class="textMagang">
-            <h6 class="use-text-paragraph text-justify ml-4">Kami Moon Coorporation menyediakan lowongan magang untuk para siswa/mahasiswa untuk menjadi UI UX Designer pada perusahaan kami. Jika kalian tertarik untuk menjadi bagian dari perusahaan kami, Silahkan kirimkan CV kalian.</h6>
-              
-            <a class="btn btn-infoMagang font-weight-bold selengkapnya w-30 h-25 ml-4 mt-4" href="#">Selengkapnya</a>
-          </div>
-        </div>
-                      
-        <div class="card-header">Published on 26-Feb-2021</div>
-      </div>
-    </div>
-    </div>
-          <section class="space-top" id="footer">
+    
+      <section class="space-top space-magang" id="footer">
             <footer class="footer invert">
               <div class="container">
                 <div class="row">
                   <div class="col-md-3 pa-4">
                     <div class="logo">
                       <img src="{{ asset('images/movie-logo.png')}}" alt="logo" />
-                      <h6 class="title">Movie</h6>
+                      <h6 class="title">Grow Jobs</h6>
                     </div>
                     <p class="body-2 show-md-up text-center">&copy; Devlife Company 2021</p>
                   </div>

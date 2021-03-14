@@ -14,7 +14,8 @@ class InternController extends Controller
      */
     public function index()
     {
-        return view('intern.intern');
+        $dataMagang = Intern::paginate(2);
+        return view('intern.intern', compact('dataMagang'));
     }
 
     /**
