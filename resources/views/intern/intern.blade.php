@@ -1,4 +1,4 @@
-@extends('app/app')
+@extends('app.app')
 @section('webTitle', 'Grow Jobs - Internship')
 @section('webContent')  
 <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="{{ asset('images/loading.gif')}}" alt="loading"></div>
@@ -9,10 +9,23 @@
         <li class="breadcrumb-item active" aria-current="page">Internship</li>
       </ol>
 
+      
     <div class="container ">
+      <div class="row justify-content-between">
+        <div>
+          <h4 class="secondary-title headingMagang"><span class="lowongan">Lowongan</span> Magang</h4>
+        </div>
+
+        <div>
+          <a href="/magang/create" class="btnNew">New Post</a>
+        </div>
+      </div>
+    <hr class="divider-sidebar ">
+
+    @if($dataMagang->count())
       @foreach($dataMagang as $Magang)
         <div data-aos="fade-up" data-aos-duration="3000">
-          <div class="card">
+          <div class="card mt-5">
             <div class="card-header"><b>{{ $Magang->title }}</b></div>
         
           <div class="card-body">
@@ -23,20 +36,29 @@
           <div class="textMagang">
             <h6 class="use-text-paragraph text-justify ml-4">{{ Str::limit($Magang->body, 300) }}</h6>
               
-            <a class="btn btn-infoMagang font-weight-bold selengkapnya w-30 h-25 ml-4 mt-4" href="#">Selengkapnya</a>
+            <a class="btn btn-infoMagang selengkapnya ml-4 mt-4" href="/magang/{{ $Magang->slug }}">Selengkapnya</a>
           </div>
         </div>
                       
-          <div class="card-header">Published on 26-Feb-2021</div>
+          <div class="card-footer">Published on {{ $Magang->created_at->diffForHumans() }}</div>
         </div>
       </div>
       @endforeach
+      @else
+        <div class="alert alert-info-danger">
+          There are no posts.
+        </div>
 
-      <div class="pagination">
-        {{ $dataMagang->links() }}
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <div class="d-flex justify-content-center">
+          <div>
+            {{ $dataMagang->links() }}
+          </div>
+        </div>
       </div>
     </div>
     
+    <div data-aos="fade-up" data-aos-duration="3000">
       <section class="space-top space-magang" id="footer">
             <footer class="footer invert">
               <div class="container">
@@ -142,3 +164,4 @@
               </div>
             </footer>
           </section>
+    </div>

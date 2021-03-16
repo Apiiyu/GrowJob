@@ -1,5 +1,5 @@
 @extends('app/app')
-@section('webTitle', 'Grow Jobs - Detail Magang')
+@section('webTitle', 'Grow Jobs - Create Magang')
 @section('webContent')
   <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="{{ asset('images/loading.gif')}}" alt="loading"></div>
   <div class="m-application theme--light transition-page" id="app">
@@ -116,83 +116,39 @@
             </div>
           </div>
         </header>
-        <div class="bg-movie"><img src="{{ asset('images/intern/videographer.jfif' )}}" alt="poster" /></div>
-        <main class="container-wrap">
-          <div class="row justify-content-center">
-            <div class="col-sm-5 col-lg-5 pa-6 order-sm-last">
-              <div class="image ml-5">
-                <div class="imgShadow ml-3"></div>
-                <img src="{{ asset('images/intern/videographer.jfif')}}" alt="movie" class="imgDetailIntern"/>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-5 col-sm-7 pa-6 order-sm-first">
-              <div class="text"><span class="use-text-subtitle2">Lowongan Magang</span>
-                <h4 class="use-text-title2">{{ $Magang->title }}</h4>
-                <div class="property">
-                  <div class="star">
-                    <i class="material-icons star-icon" title="1">star</i>
+        
+        
+        <div class="container create">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Create New Informasi Magang</div>
+                        <div class="card-body">
+                            <form action="/magang/store" method="post">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input type="text" name="title" id="title" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="body">Body</label>
+                                    <textarea type="text" name="body" id="body" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="infoPerusahaan">Info Perusahaan</label>
+                                    <textarea type="text" name="infoPerusahaan" id="infoPerusahaan" class="form-control"></textarea>
+                                </div>
 
-                    <i class="material-icons star-icon" title="2">star</i>
-
-                    <i class="material-icons star-icon" title="3">star</i>
-
-                    <i class="material-icons star-icon" title="4">star</i>
-
-                    <i class="material-icons star-icon" title="5">star</i>
-                  </div><p class="ml-3">5.0</p><span class="divider"></span>Stars Group
-                </div>
-                <article class="desc">
-                  <p class="use-text-paragraph text-justify">{{ $Magang->infoPerusahaan }} </p>
-                </article>
-                <div class="btn-area">
-                  <a class="btn-flat secondary waves-effect mr-3" href="#">Profile Company</a>
-                  <a class="btn primary waves-effect" href="#">Apply Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div data-aos="fade-up" data-aos-duration="3000">
-          <div class="row justify-content-center mt-5">
-            <div class="col-lg-10 col-md-12 mt-5">
-              <div class="card about">
-                <div class="row">
-                  <div class="col-md-7">
-                    <h4 class="use-text-subtitle mb-3">Requirements</h4>
-                    <p class="use-text-paragraph">1. Age maximum 35 years old</p>
-                    <p class="use-text-paragraph text-justify">2. Proficient in using front-end frameworks such as javascript frameworks and proficient at using back-end frameworks</p>
-                    <p class="use-text-paragraph">3. Able to work as a team</p>
-                    <p class="use-text-paragraph">4. Graduates of S1 information systems or informatics systems</p>
-                    <p class="use-text-paragraph">5. Have at least one year experience in this field</p>
-                    <p class="use-text-paragraph">6. Willing to work full time</p>
-
-                    <div class="btn-area-detail mt-10">
-                      <a class="btn-flat secondary waves-effect"><i class="ion-android-share-alt"> </i>share</a>
-                      <a class="btn-flat secondary waves-effect"><i class="ion-ios-star"> </i>rate this</a>
+                                <button type="submit" class="btn btnNew">Create</button>
+                            </form>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="person">
-                      <h4 class="use-text-subtitle mb-3">Job Details</h4>
-                      <h6 class="title-person"> Industry </h5>
-                        <p>Information technology and services</p>
-                      <h6 class="title-person">Type of Work</h6>
-                      <p>Full Time</p>
-                      <h6 class="title-person">Job Function</h6>
-                      <p>Business Development and Information Technology</p>
-                      <h6 class="title-person">Salary</h6>
-                      <p>Rp.-</p>
-                      <h6 class="title-person">Length of Internship</h6>
-                      <p>3 Months</p>
-
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        </main>
+        
+        
+        
         <footer class="footer invert">
           <div class="container">
             <div class="row">

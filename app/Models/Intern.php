@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Intern extends Model
 {
+    public function getRouteKeyName(){
+        return 'slug';
+    }
+
     use HasFactory;
 }

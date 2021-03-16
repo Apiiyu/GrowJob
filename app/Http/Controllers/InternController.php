@@ -14,7 +14,7 @@ class InternController extends Controller
      */
     public function index()
     {
-        $dataMagang = Intern::paginate(2);
+        $dataMagang = Intern::paginate(4);
         return view('intern.intern', compact('dataMagang'));
     }
 
@@ -25,7 +25,7 @@ class InternController extends Controller
      */
     public function create()
     {
-        //
+        return view('intern.create');
     }
 
 
@@ -37,7 +37,14 @@ class InternController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $createInfoMagang = new Intern;
+        $createInfoMagang->title = $request->title;
+        $createInfoMagang->slug = \Str::slug($request->title);
+        $createInfoMagang->body = $request->body;
+        $createInfoMagang->infoPerusahaan = $request->infoPerusahaan;
+        $createInfoMagang->save();
+
+        return redirect()->to('magang');
     }
 
     /**
@@ -46,9 +53,10 @@ class InternController extends Controller
      * @param  \App\Models\Intern  $intern
      * @return \Illuminate\Http\Response
      */
-    public function show(Intern $intern)
+    public function show(Intern $Intern)
     {
-        //
+        $Magang = $Intern;
+        return view('intern.detail', compact('Magang'));
     }
 
     /**

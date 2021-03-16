@@ -39,7 +39,7 @@
               <div class="auth-frame">
                 <div class="row">
                   <div class="col-md-5">
-                    <a class="waves-effect" href="/">
+                    <a class="waves-effect icon-home" href="/">
                       <img src="{{ asset('images/home.png') }}" class="iconHome" alt="icon">
                     </a>
                     <div class="hidden-sm-down">
