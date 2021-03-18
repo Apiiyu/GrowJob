@@ -153,6 +153,15 @@
         clear: both;
     }
 
+    .box-form{
+      width: 100%;
+      width: 100%;
+      background-color: #FFF;
+      border: 1px solid #EBEBEB;
+      box-shadow: 4px 2px #A8A7A7;
+      border-radius: 5px;
+    } 
+
     #news{
       display: none;
     }

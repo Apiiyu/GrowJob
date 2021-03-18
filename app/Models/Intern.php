@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Intern extends Model
 {
+    protected $fillable = ['title', 'slug', 'body', 'infoPerusahaan'];
+
     public function getRouteKeyName(){
         return 'slug';
     }

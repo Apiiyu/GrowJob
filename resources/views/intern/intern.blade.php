@@ -5,7 +5,7 @@
   <div class="m-application theme--light transition-page" id="app">
     <div class="loading"></div>
       <ol class="breadcrumb secMenu">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Internship</li>
       </ol>
 
@@ -48,7 +48,7 @@
         <div class="alert alert-info-danger">
           There are no posts.
         </div>
-
+      @endif
       <div data-aos="fade-up" data-aos-duration="3000">
         <div class="d-flex justify-content-center">
           <div>

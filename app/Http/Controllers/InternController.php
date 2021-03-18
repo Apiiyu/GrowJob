@@ -37,12 +37,16 @@ class InternController extends Controller
      */
     public function store(Request $request)
     {
-        $createInfoMagang = new Intern;
-        $createInfoMagang->title = $request->title;
-        $createInfoMagang->slug = \Str::slug($request->title);
-        $createInfoMagang->body = $request->body;
-        $createInfoMagang->infoPerusahaan = $request->infoPerusahaan;
-        $createInfoMagang->save();
+        // $createInfoMagang = new Intern;
+        // $createInfoMagang->title = $request->title;
+        // $createInfoMagang->slug = \Str::slug($request->title);
+        // $createInfoMagang->body = $request->body;
+        // $createInfoMagang->infoPerusahaan = $request->infoPerusahaan;
+        // $createInfoMagang->save();
+
+        $createInfoMagang = $request->all();
+        $createInfoMagang['slug'] = \Str::slug($request->title);
+        Intern::create($createInfoMagang);
 
         return redirect()->to('magang');
     }

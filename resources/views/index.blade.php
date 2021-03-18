@@ -192,7 +192,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="#">Apply Now</a>
+                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -242,7 +242,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="#">Apply Now</a>
+                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -291,7 +291,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="#">Apply Now</a>
+                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -340,7 +340,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="#">Apply Now</a>
+                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -389,7 +389,7 @@
                       <h4 class="secondary-title">Magang</h4>
                     </div>
                     <p class="use-text-paragrpah text-justify">Kami menyediakan berbagai informasi lowongan kerja dan magang untuk berbagai siswa/mahasiswa. Silahkan kalian tentukan lowongan magang yang anda inginkan. </p>
-                    <a href="/interns" class="btn btn-infoMagang">Info Magang</a>
+                    <a href="/magang" class="btn btn-infoMagang">Info Magang</a>
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">

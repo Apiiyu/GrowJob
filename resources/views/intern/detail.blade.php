@@ -147,7 +147,7 @@
                 </article>
                 <div class="btn-area">
                   <a class="btn-flat secondary waves-effect mr-3" href="#">Profile Company</a>
-                  <a class="btn primary waves-effect" href="#">Apply Now</a>
+                  <a class="btn primary waves-effect" href="/lamar">Apply Now</a>
                 </div>
               </div>
             </div>

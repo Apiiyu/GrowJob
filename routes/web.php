@@ -34,4 +34,4 @@ Route::get('registrasi', [AuthController::class, 'register']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::view('admin', 'admin.dashboard');
+Route::view('apply', 'intern.apply');
