@@ -10960,15 +10960,17 @@ body {
 
 .form-page .page-wrap .form-wrap {
   position: relative;
-  padding: 16px;
+  padding: 0.8rem;
 }
 
 .theme--light .form-page .page-wrap .form-wrap {
   background-color: #fff;
+  border-radius: 0.6rem;
 }
 
 .theme--dark .form-page .page-wrap .form-wrap {
   background-color: #424242;
+  border-radius: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -11715,12 +11717,14 @@ body {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
+  color: #fff !important;
   padding: 8px 1rem;
 }
 
 .footer .collapsible-header h6 {
   font-size: 15px !important;
   font-weight: var(--font-bold);
+  color: #fff !important;
 }
 
 .footer .collapsible-header i {
@@ -11843,7 +11847,7 @@ body {
 }
 
 .theme--light .footer.invert {
-  color: rgba(0, 0, 0, 0.87);
+  color: #FFF;
 }
 
 .theme--dark .footer.invert {

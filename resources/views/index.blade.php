@@ -542,7 +542,7 @@
 
 
           <section class="space-top" id="faq">
-            <div class="root">
+            <div class="root"> 
               <div class="container fixed-width">
                 <div class="row spacing6">
                   <div class="col-md-6 pa-6">
