@@ -44,6 +44,29 @@ class InternController extends Controller
         // $createInfoMagang->infoPerusahaan = $request->infoPerusahaan;
         // $createInfoMagang->save();
 
+        /* 
+            Ada cara untuk membuat code kita semakin ringkas dalam pembuatan info magang
+            1. Hilangkan Parameter Request dan variable requestnya
+            Public function store(){}
+
+            2. lalu kita membuat variable attr yang menampung semua requestnya
+            $attr = request()->validate([
+                'title'          => 'required|min:3|max:32',
+                'body'           => 'required|min:3|max:300',
+                'infoPerusahaan' => 'required|min:3|max:300',
+            ]);
+
+            $attr['slug'] = Str::slug(request('title'));
+            Intern::create($attr);
+        */
+
+
+        $request->validate([
+            'title'          => 'required|min:3|max:32',
+            'body'           => 'required|min:3|max:300',
+            'infoPerusahaan' => 'required|min:3|max:300',
+        ]);
+
         $createInfoMagang = $request->all();
         $createInfoMagang['slug'] = \Str::slug($request->title);
         Intern::create($createInfoMagang);

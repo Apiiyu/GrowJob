@@ -11,16 +11,26 @@
         <div class="sidenav mobile-nav" id="slide-menu">
           <div class="menu">
             <ul class="collection">
-              <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="#promotions">Home</a></li>
-              <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="#featured">featured</a></li>
-              <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="#top">top categories</a></li>
-              <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="#all">all categories</a></li>
-              <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="#pricing">pricing</a></li>
+              <li><a class="btn btn-flat anchor-link waves-effect" href="#banner">Home</a></li>
+              <li><a class="btn btn-flat anchor-link waves-effect" href="#magang">Internship</a></li>
+              <li><a class="btn btn-flat anchor-link waves-effect" href="#loker">Job Vacancies</a></li>
+              <li><a class="btn btn-flat anchor-link waves-effect" href="#all">Benefits</a></li>
+              <li><a class="btn btn-flat anchor-link waves-effect" href="#pricing">Questions</a></li>
             </ul>
             <hr class="divider-sidebar">
             <ul class="collection">
-              <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="login.html">login</a></li>
-              <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="register.html">register</a></li>
+              <a class="mr-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+              </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+            </form>
+              <div class="hidden-md-down"><span class="divider"></span></div>
+              <nav class="nav-menu nav-auth">
+                <div class="hidden-xs-down">
+                  <p class="namaUser mt-3">Selamat Datang, {{ Auth::user()->name }}</p>
+                </div>
             </ul>
           </div>
         </div><!-- ##### HEADER #####-->
@@ -41,13 +51,13 @@
                       <li><a class="btn btn-flat anchor-link waves-effect" href="#banner">Home</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="#magang">Internship</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="#loker">Job Vacancies</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="#all">Contact Us</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="#pricing">News</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#all">Benefits</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#pricing">Questions</a></li>
                     </ul>
                   </div>
                 </div>
               </nav>
-              <a class="mr-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+              <a class="mr-3 logoutUser" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}
               </a>
 
@@ -57,7 +67,7 @@
               <div class="hidden-md-down"><span class="divider"></span></div>
               <nav class="nav-menu nav-auth">
                 <div class="hidden-xs-down">
-                  <p class="namaUser mt-3">Selamat Datang, {{ Auth::user()->name }}</p>
+                  <p class="namaUser desktopView mt-3">Selamat Datang, {{ Auth::user()->name }}</p>
                 </div>
                 <div class="menu-setting">
                   <div class="setting">
@@ -192,7 +202,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
+                                <a class="btn btn-Apply" href="/apply">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -242,7 +252,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
+                                <a class="btn btn-Apply" href="/apply">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -291,7 +301,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
+                                <a class="btn btn-Apply" href="/apply">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -340,7 +350,7 @@
                               </article>
                               <div class="btn-area">
                                 <a class="btn-flat secondary waves-effect btnView" href="#">View Profile Company</a>
-                                <a class="btn btn-Apply" href="/magang">Apply Now</a>
+                                <a class="btn btn-Apply" href="/apply">Apply Now</a>
                               </div>
                             </div>
                           </div>
@@ -389,11 +399,11 @@
                       <h4 class="secondary-title">Magang</h4>
                     </div>
                     <p class="use-text-paragrpah text-justify">Kami menyediakan berbagai informasi lowongan kerja dan magang untuk berbagai siswa/mahasiswa. Silahkan kalian tentukan lowongan magang yang anda inginkan. </p>
-                    <a href="/magang" class="btn btn-infoMagang">Info Magang</a>
+                    <a href="/magang" class="btn btn-infoLoker">Info Magang</a>
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">
-                      <a class="btn-wrap waves-effect" href="detail-movie.html">
+                      <a class="btn-wrap waves-effect" href="/magang">
                         <span class="figure sectionMagang">
                           <i class="ion-arrow-right-b play"></i>
                           <img src="{{ asset('images/intern/intern5.jpg')}}" alt="Cras convallis lacus"/>
@@ -405,7 +415,7 @@
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">
-                      <a class="btn-wrap waves-effect" href="detail-movie.html">
+                      <a class="btn-wrap waves-effect" href="/magang">
                         <span class="figure sectionMagang">
                           <i class="ion-arrow-right-b play"></i>
                           <img src="{{ asset('images/intern/intern6.jpg')}}" height="420px" alt="Cras convallis lacus"/>
@@ -417,7 +427,7 @@
                   </div>
                   <div class="col-md-3 col-sm-4">
                     <div class="card movie-thumb">
-                      <a class="btn-wrap waves-effect" href="detail-movie.html">
+                      <a class="btn-wrap waves-effect" href="/magang">
                         <span class="figure sectionMagang">
                           <i class="ion-arrow-right-b play"></i>
                           <img src="{{ asset('images/intern/intern7.jpg')}}" alt="Cras convallis lacus"/>
@@ -497,7 +507,7 @@
           <!-- ##### TRENDING #####-->
           <!-- ##### END PRICING #####-->
           
-          <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF" class="mt-5">
+          <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF" class="mt-5" id="all">
             <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">
             <div style="font-family: 'Poppins', sans-serif;">
         
@@ -541,7 +551,7 @@
           <!-- ##### FAQ #####-->
 
 
-          <section class="space-top" id="faq">
+          <section class="space-top" id="pricing">
             <div class="root"> 
               <div class="container fixed-width">
                 <div class="row spacing6">

@@ -9,11 +9,9 @@
         <div class="sidenav mobile-nav" id="slide-menu">
           <div class="menu">
             <ul class="collection">
-              <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="../">Home</a></li>
-              <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="../magang">Internship</a></li>
-              <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="#top">top categories</a></li>
-              <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="#all">all categories</a></li>
-              <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="#pricing">pricing</a></li>
+              <li><a class="btn btn-flat anchor-link waves-effect" href="../">Home</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="../magang">Internship</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="../home#loker">Job Vacancies</a></li>
             </ul>
             <hr class="divider-sidebar">
           </div>
@@ -26,7 +24,7 @@
                   <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
                 </button>
                 <div class="logo">
-                  <a href="index.html"><img src="{{ asset('images/movie-logo.png')}}" alt="logo" /></a>
+                  <a href="/home"><img src="{{ asset('images/movie-logo.png')}}" alt="logo" /></a>
                 </div>
                 <div>
                   <div class="scrollactive-nav show-lg-up">
@@ -34,9 +32,7 @@
                       <li class="d-none"><a href="#banner"></a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="../">Home</a></li>
                       <li><a class="btn btn-flat anchor-link waves-effect" href="../magang">Internship</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#top">Job Vacancies</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#all">all categories</a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href="index.html#pricing">pricing</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="../home#loker">Job Vacancies</a></li>
                     </ul>
                   </div>
                 </div>
@@ -143,11 +139,11 @@
                   </div><p class="ml-3">5.0</p><span class="divider"></span>Stars Group
                 </div>
                 <article class="desc">
-                  <p class="use-text-paragraph text-justify">{{ $Magang->infoPerusahaan }} </p>
+                  <p class="use-text-paragraph text-justify">{{Str::limit($Magang->infoPerusahaan, 300,) }} </p>
                 </article>
                 <div class="btn-area">
                   <a class="btn-flat secondary waves-effect mr-3" href="#">Profile Company</a>
-                  <a class="btn primary waves-effect" href="/lamar">Apply Now</a>
+                  <a class="btn primary waves-effect" href="../apply">Apply Now</a>
                 </div>
               </div>
             </div>

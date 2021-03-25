@@ -127,16 +127,44 @@
                             <form action="/magang/store" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="title">Title</label>
-                                    <input type="text" name="title" id="title" class="form-control">
+                                  @error('title') 
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                  @enderror
+
+                                  @error('body') 
+                                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      
+                                  @enderror
+                                  
+                                  @error('infoPerusahaan') 
+                                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>  
+                                    @enderror
+
+                                  <label for="title">Title</label>
+                                  <input type="text" name="title" id="title" class="form-control @error('title')is-invalid @enderror">
                                 </div>
                                 <div class="form-group">
                                     <label for="body">Body</label>
-                                    <textarea type="text" name="body" id="body" class="form-control"></textarea>
+                                    <textarea type="text" name="body" id="body" class="form-control @error('body')is-invalid @enderror"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="infoPerusahaan">Info Perusahaan</label>
-                                    <textarea type="text" name="infoPerusahaan" id="infoPerusahaan" class="form-control"></textarea>
+                                    <textarea type="text" name="infoPerusahaan" id="infoPerusahaan" class="form-control @error('infoPerusahaan')is-invalid @enderror"></textarea>
                                 </div>
 
                                 <button type="submit" class="btn btnNew">Create</button>

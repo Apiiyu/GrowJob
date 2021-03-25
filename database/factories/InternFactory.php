@@ -26,6 +26,7 @@ class InternFactory extends Factory
             'title' => $this->faker->sentence(),
             'slug' => Str::slug($this->faker->sentence()),
             'body' => $this->faker->paragraph(20),
+            'infoPerusahaan' => $this->faker->paragraph(30),
         ];
     }
 }

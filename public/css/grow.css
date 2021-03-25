@@ -10,7 +10,7 @@
         top: 1;
     }
 
-    .namaUser{
+    .namaUser, .namaUserMobile{
         font-size: 1rem;
         color: #FB3E6C !important;
         font-weight: 500;
@@ -176,8 +176,12 @@
     }
 }
 
-@media (min-width: 768px) { 
+@media (max-width: 624px) { 
   .icon-home {
+    display: none !important;
+  }
+
+  .desktopView, .logoutUser{
     display: none !important;
   }
 
